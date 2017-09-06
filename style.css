@@ -1,0 +1,129 @@
+/*<!-- Bootstrap and CSS here-->*/
+    html, #app, #headers h1, #headers h3, #guess-list, #submit {
+        box-sizing: 'border-box';
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .center {
+        text-align: center;
+    }
+    .box-shadow {
+        box-shadow: 4px 4px 4px #1C1111;
+    }
+    #app {
+        color: #C80E0E;
+        font-family: 'Nosifer', cursive;
+        background-color: #000000; 
+    }
+    #headers {
+        padding: 10px 0 0 0;
+        background: #696161 url(images/Question-Mark.jpg) center left repeat;
+        font-weight: bolder;
+        font-size: 23px;        
+        text-shadow: 5px 5px 5px #89BEA3;
+    }
+    #title {
+        color: #C80E0E;
+        font-family: 'Nosifer', cursive;
+        font-size: 69px;
+        line-height: 80px;
+    }
+    #subtitle {
+        color: #149F14;
+        font-size: 50px;
+        line-height: 75px;
+    }
+    #subtitle p {
+        color: #870B0B;
+        font-family: 'Butcherman', cursive;
+        font-size: 23px;
+        line-height: 18px;
+    }
+    #subtitle p:nth-last-child(2) {
+        color: #500505;
+        font-family: 'Creepster', cursive;
+    }
+    #subtitle p:last-child {
+        color: #230202;
+        font-family: 'Nosifer', cursive;
+        margin-bottom: 0;
+    }
+    #main {
+        background: #000000 url(images/game-background.jpg) bottom center no-repeat;
+        background-position-x: 70%;
+        margin: 0 auto;
+        padding: 0 0 73px 0;
+    }
+    #input-parent {
+        margin-bottom: -33px;
+    }
+    #player-input {
+        position: relative;
+        top: -30px;
+        left: 7.5px;
+        background: transparent;
+        margin-top: 7%;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        color: #FF0000;
+        font-size: 55px;
+        text-shadow: 5px 5px 5px #743333;
+    }
+    #submit {
+        position: relative;
+        top: -69px;
+        left: 35px;
+        color: #C92F2F;
+        font-size: 11.5px;
+        font-weight: bold;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+    }
+    #guess-list {
+        list-style: none;
+    }
+    .guess {
+        display: inline;
+        margin: 0 5px;
+        padding: 0 18px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.60);
+        font-size: 55px; 
+        color: #960305
+    }
+    #menu-btns {
+        margin: 26px 0 0 0;
+        padding-top: 26px;
+    }
+    #footer {
+        width: 100%;
+        height: 13%;
+        border-top: 2px solid black;
+        background-color: #FFFFFF;
+        position: fixed;
+        bottom: 0;
+    }
+    .row h5 {
+        font-weight: bolder;
+        font-size: 23px;
+        padding-top: 10px;
+    }
+    img {
+        display: inline;
+        width: 400px;
+        margin: 0 auto;
+    }
+    #FSA {
+        position: relative;
+        top: -14px;
+    }
+    #GHA {
+        padding-top: 8px;
+    }
+    #creepy {
+        display: none;
+    }

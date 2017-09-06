@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nosifer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Butcherman">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Creepster|Eater">
+  </head>
+  <body>
+
+      <div id='app' class="center"> 
+
+        <div id='headers'>
+          <h1 id='title'>Guessing Game</h1>
+          <h3 id='subtitle'>
+            <p>Guess a number between 1 - 100</p> 
+            <p>You only have 5 guesses</p> 
+            <p>Good Luck...</p>
+          </h3>
+        </div>
+        
+        <div id='main' class="container center">
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id="player-input" class="center box-shadow" type="number" name="current guess" placeholder="#" min="1" max="100" autofocus><br/>
+            <!--Connect a range slider with the number input above for a better user experience-->
+            <!-- <input type="range" name="current guess" value="1" min="1" max="100" autofocus><br/> -->
+            <button id="submit" type="submit" class="btn btn-success box-shadow">GUESS</button>
+          </div>
+
+          <!-- <div id="guesses"> Unnecessary div?-->
+            <!-- unordered list of guesses -->
+            <ul id="guess-list">
+                <li id="g1" class="guess box-shadow">-</li>
+                <li id="g2" class="guess box-shadow">-</li>
+                <li id="g3" class="guess box-shadow">-</li>
+                <li id="g4" class="guess box-shadow">-</li>
+                <li id="g5" class="guess box-shadow">-</li>
+            </ul>
+          <!-- </div> -->
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id="reset" class="btn btn-danger box-shadow"><a href="index.html">Reset</a></button>
+            <!-- <button id="hint">Hint</button> -->
+            <button id="hint" type="button" class="btn btn-warning box-shadow" aria-label="Left Align">
+                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    <div id='footer' class="center">
+        <div class="row">
+            <!-- class="img-responsive"  -->
+          <div id='FSA' class="col-sm-5">
+            <img class="img-responsive" src='images/fa-logo@2x.png'></img>
+          </div>
+          <div class="col-sm-2">
+              <h5>Project by <br/> Jonathan Martinez</h5>
+          </div>
+          <div id='GHA' class="col-sm-5">
+            <img class="img-responsive" src='images/grace_hopper_academy.png'></img>
+          </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="application.js"></script> -->
+    <script src="GuessingGame.js"></script>
+
+    <audio id="creepy" controls>
+        <source src="texas-effects.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </body>
+</html>
